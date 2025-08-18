@@ -34,8 +34,7 @@ class ShowAllChatScreen extends StatelessWidget {
                 title: Text(
                   sender.name,
                   style: TextStyle(
-                    fontSize:
-                        AppConstants.screenWidth(context) * 0.045, // Responsive
+                    fontSize: AppConstants.screenWidth(context) * 0.045,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -64,7 +63,7 @@ class ShowAllChatScreen extends StatelessWidget {
                     ? Text(
                         '${recieveMessage?.timestamp.hour.toString().padLeft(2, '0')} : ${recieveMessage?.timestamp.minute.toString().padLeft(2, '0')} ${(recieveMessage?.timestamp.hour ?? 0) >= 12 ? 'PM' : 'AM'}',
                         style: TextStyle(
-                          fontSize: AppConstants.screenHeight(context) * 0.015,
+                          fontSize: AppConstants.screenHeight(context) * 0.020,
                         ),
                       )
                     : Text(

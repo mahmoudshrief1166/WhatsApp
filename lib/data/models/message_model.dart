@@ -20,7 +20,7 @@ class MessageModel extends MessageEntity {
       timestamp: DateTime.parse(json['timestamp'] as String),
       status: MessageStatus.values.firstWhere(
         (e) => e.name == json['status'], 
-        orElse: () => MessageStatus.sent, // fallback آمن
+        orElse: () => MessageStatus.sent, 
       ),
     );
   }
@@ -29,7 +29,7 @@ class MessageModel extends MessageEntity {
     return {
       "id": id,
       "chatId": chatId,
-      "senderId": senderId, // خليها متناسقة مع fromJson
+      "senderId": senderId,
       "content": content,
       "timestamp": timestamp.toIso8601String(),
       "status": status.name,
