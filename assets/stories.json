@@ -1,0 +1,182 @@
+[
+  {
+    "id": "s1",
+    "user": {
+      "id": "u1",
+      "name": "Mahmoud",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=3"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=1",
+    "timestamp": 1755451200000,
+    "duration": 10000
+  },
+  {
+    "id": "s2",
+    "user": {
+      "id": "u2",
+      "name": "Ali",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=2",
+    "timestamp": 1755462000000,
+    "duration": 15000
+  },
+  {
+    "id": "s3",
+    "user": {
+      "id": "u3",
+      "name": "Ahmed",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=4"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=3",
+    "timestamp": 1755462000000,
+    "duration": 12000
+  },
+  {
+    "id": "s4",
+    "user": {
+      "id": "u4",
+      "name": "Sara",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=5"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=4",
+    "timestamp": 1755421000000,
+    "duration": 8000
+  },
+  {
+    "id": "s5",
+    "user": {
+      "id": "u5",
+      "name": "Youssef",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=6"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=5",
+    "timestamp": 1755470000000,
+    "duration": 9000
+  },
+  {
+    "id": "s6",
+    "user": {
+      "id": "u6",
+      "name": "Mona",
+      "sender": "false",
+      "avatarUrl": "https://i.pravatar.cc/150?img=7"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=6",
+    "timestamp": 1755471000000,
+    "duration": 11000
+  },
+  {
+    "id": "s7",
+    "user": {
+      "id": "u7",
+      "name": "Omar",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=8"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=7",
+    "timestamp": 1755472000000,
+    "duration": 10000
+  },
+  {
+    "id": "s8",
+    "user": {
+      "id": "u8",
+      "name": "Laila",
+      "sender": "false",
+      "avatarUrl": "https://i.pravatar.cc/150?img=9"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=8",
+    "timestamp": 1755473000000,
+    "duration": 9000
+  },
+  {
+    "id": "s9",
+    "user": {
+      "id": "u9",
+      "name": "Hassan",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=10"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=9",
+    "timestamp": 1755474000000,
+    "duration": 12000
+  },
+  {
+    "id": "s10",
+    "user": {
+      "id": "u10",
+      "name": "Nour",
+      "sender": "false",
+      "avatarUrl": "https://i.pravatar.cc/150?img=11"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=10",
+    "timestamp": 1755475000000,
+    "duration": 10000
+  },
+  {
+    "id": "s11",
+    "user": {
+      "id": "u11",
+      "name": "Karim",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=12"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=11",
+    "timestamp": 1755476000000,
+    "duration": 8000
+  },
+  {
+    "id": "s12",
+    "user": {
+      "id": "u12",
+      "name": "Dina",
+      "sender": "false",
+      "avatarUrl": "https://i.pravatar.cc/150?img=13"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=12",
+    "timestamp": 1755477000000,
+    "duration": 9000
+  },
+  {
+    "id": "s13",
+    "user": {
+      "id": "u13",
+      "name": "Samir",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=14"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=13",
+    "timestamp": 1755478000000,
+    "duration": 10000
+  },
+  {
+    "id": "s14",
+    "user": {
+      "id": "u14",
+      "name": "Hala",
+      "sender": "false",
+      "avatarUrl": "https://i.pravatar.cc/150?img=15"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=14",
+    "timestamp": 1755479000000,
+    "duration": 11000
+  },
+  {
+    "id": "s15",
+    "user": {
+      "id": "u15",
+      "name": "Fady",
+      "sender": "true",
+      "avatarUrl": "https://i.pravatar.cc/150?img=16"
+    },
+    "mediaUrl": "https://picsum.photos/400/700?random=15",
+    "timestamp": 1755480000000,
+    "duration": 12000
+  }
+]

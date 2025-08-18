@@ -1,0 +1,273 @@
+[
+  {
+    "id": "1",
+    "users": [
+      {"id": "u1", "name": "Mahmoud", "avatarUrl": "https://i.pravatar.cc/150?img=3","sender":"true"},
+      {"id": "u2", "name": "Ali", "avatarUrl": "https://i.pravatar.cc/150?img=4","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m1",
+        "chatId": "1",
+        "senderId": "u1",
+        "content": "Ezzayak ya Ali!",
+        "timestamp": "2025-08-17T12:00:00Z",
+        "status": "sent"
+      },
+      {
+        "id": "m2",
+        "chatId": "1",
+        "senderId": "u2",
+        "content": "Ezzayak ya Mahmoud?",
+        "timestamp": "2025-08-17T12:05:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "users": [
+      {"id": "u3", "name": "Ahmed", "avatarUrl": "https://i.pravatar.cc/150?img=4","sender":"true"},
+      {"id": "u2", "name": "Ali","avatarUrl": "https://i.pravatar.cc/150?img=4","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m3",
+        "senderId": "u3",
+        "chatId": "2",
+        "content": "Tegy Hagz Kora Ya Ali?",
+        "timestamp": "2025-08-17T12:10:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "users": [
+      {"id": "u4", "name": "Sara", "avatarUrl": "https://i.pravatar.cc/150?img=5","sender":"true"},
+      {"id": "u2", "name": "Ali", "avatarUrl": "https://i.pravatar.cc/150?img=4","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m4",
+        "chatId": "3",
+        "senderId": "u4",
+        "content": "Ezzayak ya Ali?",
+        "timestamp": "2025-08-17T01:15:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "users": [
+      {"id": "u5", "name": "Youssef", "avatarUrl": "https://i.pravatar.cc/150?img=6","sender":"true"},
+      {"id": "u6", "name": "Mona", "avatarUrl": "https://i.pravatar.cc/150?img=7","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m5",
+        "chatId": "4",
+        "senderId": "u5",
+        "content": "Sabah el khair ya Mona!",
+        "timestamp": "2025-08-18T08:00:00Z",
+        "status": "sent"
+      },
+      {
+        "id": "m6",
+        "chatId": "4",
+        "senderId": "u6",
+        "content": "Sabah el noor ya Youssef!",
+        "timestamp": "2025-08-18T08:01:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "users": [
+      {"id": "u7", "name": "Omar", "avatarUrl": "https://i.pravatar.cc/150?img=8","sender":"true"},
+      {"id": "u8", "name": "Laila", "avatarUrl": "https://i.pravatar.cc/150?img=9","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m7",
+        "chatId": "5",
+        "senderId": "u7",
+        "content": "Ahlan ya Laila!",
+        "timestamp": "2025-08-18T09:00:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "users": [
+      {"id": "u9", "name": "Hassan", "avatarUrl": "https://i.pravatar.cc/150?img=10","sender":"true"},
+      {"id": "u10", "name": "Nour", "avatarUrl": "https://i.pravatar.cc/150?img=11","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m8",
+        "chatId": "6",
+        "senderId": "u9",
+        "content": "Izayek ya Nour?",
+        "timestamp": "2025-08-18T10:00:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "users": [
+      {"id": "u11", "name": "Karim", "avatarUrl": "https://i.pravatar.cc/150?img=12","sender":"true"},
+      {"id": "u12", "name": "Dina", "avatarUrl": "https://i.pravatar.cc/150?img=13","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m9",
+        "chatId": "7",
+        "senderId": "u11",
+        "content": "Sabah el ward ya Dina!",
+        "timestamp": "2025-08-18T10:10:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "users": [
+      {"id": "u13", "name": "Samir", "avatarUrl": "https://i.pravatar.cc/150?img=14","sender":"true"},
+      {"id": "u14", "name": "Hala", "avatarUrl": "https://i.pravatar.cc/150?img=15","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m10",
+        "chatId": "8",
+        "senderId": "u13",
+        "content": "Ezzayek ya Hala?",
+        "timestamp": "2025-08-18T10:20:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "users": [
+      {"id": "u15", "name": "Fady", "avatarUrl": "https://i.pravatar.cc/150?img=16","sender":"true"},
+      {"id": "u16", "name": "Salma", "avatarUrl": "https://i.pravatar.cc/150?img=17","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m11",
+        "chatId": "9",
+        "senderId": "u15",
+        "content": "Salam ya Salma!",
+        "timestamp": "2025-08-18T10:30:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "users": [
+      {"id": "u17", "name": "Rami", "avatarUrl": "https://i.pravatar.cc/150?img=18","sender":"true"},
+      {"id": "u18", "name": "Aya", "avatarUrl": "https://i.pravatar.cc/150?img=19","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m12",
+        "chatId": "10",
+        "senderId": "u17",
+        "content": "Izayek ya Aya?",
+        "timestamp": "2025-08-18T10:40:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "users": [
+      {"id": "u19", "name": "Mostafa", "avatarUrl": "https://i.pravatar.cc/150?img=20","sender":"true"},
+      {"id": "u20", "name": "Nada", "avatarUrl": "https://i.pravatar.cc/150?img=21","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m13",
+        "chatId": "11",
+        "senderId": "u19",
+        "content": "Akhbarik eh ya Nada?",
+        "timestamp": "2025-08-18T10:50:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "users": [
+      {"id": "u21", "name": "Tamer", "avatarUrl": "https://i.pravatar.cc/150?img=22","sender":"true"},
+      {"id": "u22", "name": "Rania", "avatarUrl": "https://i.pravatar.cc/150?img=23","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m14",
+        "chatId": "12",
+        "senderId": "u21",
+        "content": "Sabah el fol ya Rania!",
+        "timestamp": "2025-08-18T11:00:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "users": [
+      {"id": "u23", "name": "Hossam", "avatarUrl": "https://i.pravatar.cc/150?img=24","sender":"true"},
+      {"id": "u24", "name": "Mariam", "avatarUrl": "https://i.pravatar.cc/150?img=25","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m15",
+        "chatId": "13",
+        "senderId": "u23",
+        "content": "Ezzayek ya Mariam?",
+        "timestamp": "2025-08-18T11:10:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "users": [
+      {"id": "u25", "name": "Walid", "avatarUrl": "https://i.pravatar.cc/150?img=26","sender":"true"},
+      {"id": "u26", "name": "Heba", "avatarUrl": "https://i.pravatar.cc/150?img=27","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m16",
+        "chatId": "14",
+        "senderId": "u25",
+        "content": "Izayek ya Heba?",
+        "timestamp": "2025-08-18T11:20:00Z",
+        "status": "sent"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "users": [
+      {"id": "u27", "name": "Bassel", "avatarUrl": "https://i.pravatar.cc/150?img=28","sender":"true"},
+      {"id": "u28", "name": "Farida", "avatarUrl": "https://i.pravatar.cc/150?img=29","sender":"false"}
+    ],
+    "messages": [
+      {
+        "id": "m17",
+        "chatId": "15",
+        "senderId": "u27",
+        "content": "Ahlan ya Farida!",
+        "timestamp": "2025-08-18T11:30:00Z",
+        "status": "sent"
+      }
+    ]
+  }
+]
