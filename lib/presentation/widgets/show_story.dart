@@ -25,7 +25,7 @@ class ShowStory extends StatelessWidget {
                 leading: Stack(
                   children: [
                     CircleAvatar(
-                      radius: width * 0.065,
+                      radius: (width * 0.065).clamp(22.0, 30.0),
                       backgroundImage: const NetworkImage(
                         'https://www.cairo24.com/Upload/libfiles/83/9/402.jpg',
                       ),
@@ -39,12 +39,12 @@ class ShowStory extends StatelessWidget {
                           shape: BoxShape.circle,
                           border: Border.all(
                             color: Colors.white,
-                            width: width * 0.003,
+                            width: (width * 0.003).clamp(1.0, 2.0),
                           ),
                         ),
                         child: Icon(
                           Icons.add,
-                          size: width * 0.05,
+                          size: (width * 0.05).clamp(14.0, 20.0),
                           color: Colors.white,
                         ),
                       ),
@@ -55,14 +55,17 @@ class ShowStory extends StatelessWidget {
                   'My Status',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: width * 0.045, // ديناميكي
+                    fontSize: (width * 0.045).clamp(14.0, 18.0),
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
                 subtitle: Text(
                   'Tap to add status update',
-                  style: TextStyle(fontSize: width * 0.038),
+                  style: TextStyle(
+                    fontSize: (width * 0.038).clamp(12.0, 16.0),
+                    color: Colors.grey[600],
+                  ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -80,7 +83,7 @@ class ShowStory extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.grey[700],
                     fontWeight: FontWeight.bold,
-                    fontSize: width * 0.042,
+                    fontSize: (width * 0.042).clamp(13.0, 17.0),
                   ),
                 ),
               ),
@@ -94,16 +97,16 @@ class ShowStory extends StatelessWidget {
                   final story = state.stories[index];
                   return ListTile(
                     leading: Container(
-                      padding: EdgeInsets.all(width * 0.002),
+                      padding: EdgeInsets.all((width * 0.002).clamp(1.0, 2.0)),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
                           color: Colors.green,
-                          width: width * 0.008,
+                          width: (width * 0.008).clamp(1.5, 3.0),
                         ),
                       ),
                       child: CircleAvatar(
-                        radius: width * 0.065,
+                        radius: (width * 0.065).clamp(22.0, 30.0),
                         backgroundImage: NetworkImage(story.mediaUrl),
                       ),
                     ),
@@ -111,17 +114,19 @@ class ShowStory extends StatelessWidget {
                       story.user.name,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: width * 0.043,
+                        fontSize: (width * 0.043).clamp(14.0, 18.0),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     subtitle: Text(
                       formatStoryTime(story.timestamp),
-                      style: TextStyle(fontSize: width * 0.035),
+                      style: TextStyle(
+                        fontSize: (width * 0.035).clamp(11.0, 14.0),
+                        color: Colors.grey[600],
+                      ),
                     ),
                     onTap: () {
-                      // هنا تفتح الاستوري
                     },
                   );
                 },
@@ -148,6 +153,7 @@ String formatStoryTime(DateTime date) {
     return "${date.day} ${_monthAbbr(date.month)}";
   }
 }
+
 String _monthAbbr(int month) {
   const months = [
     "Jan",

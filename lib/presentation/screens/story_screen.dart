@@ -17,7 +17,10 @@ class StoryScreen extends StatelessWidget {
           title: Text(
             'Updates',
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              fontSize: AppConstants.screenWidth(context) * 0.05,
+              fontSize: (AppConstants.screenWidth(context) * 0.05).clamp(
+                12,
+                20,
+              ),
             ),
           ),
         ),

@@ -9,6 +9,9 @@ class ShowAllChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = AppConstants.screenWidth(context);
+    final height = AppConstants.screenHeight(context);
+
     return BlocBuilder<ChatsCubit, ChatsState>(
       builder: (context, state) {
         if (state is ChatsInitial) {
@@ -18,58 +21,56 @@ class ShowAllChatScreen extends StatelessWidget {
             itemCount: state.chats.length,
             itemBuilder: (context, index) {
               final chat = state.chats[index];
-              //sender
+              // sender
               final sender = chat.users.firstWhere(
                 (user) => user.sender == "true",
               );
-              //recieveMessage
+              // recieveMessage
               final recieveMessage = chat.lastMessage?.lastWhere(
                 (msg) => msg.senderId == sender.id,
               );
+
               return ListTile(
                 contentPadding: EdgeInsets.symmetric(
-                  horizontal: AppConstants.screenWidth(context) * 0.04,
-                  vertical: AppConstants.screenHeight(context) * 0.01,
+                  horizontal: (width * 0.04).clamp(14, 18),
+                  vertical: (height * 0.01).clamp(8, 12),
                 ),
                 title: Text(
                   sender.name,
                   style: TextStyle(
-                    fontSize: AppConstants.screenWidth(context) * 0.045,
+                    fontSize: (width * 0.04).clamp(14.0, 18.0),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 subtitle: Text(
                   recieveMessage?.content ?? 'no message',
                   style: TextStyle(
-                    fontSize: AppConstants.screenWidth(context) * 0.04,
+                    fontSize: (width * 0.035).clamp(12.0, 16.0),
                     color: Colors.grey[700],
                   ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
                 leading: CircleAvatar(
-                  radius: AppConstants.screenWidth(context) * 0.07,
+                  radius: width * 0.07,
                   backgroundImage: sender.imgUrl != null
                       ? NetworkImage(sender.imgUrl!)
                       : null,
                   child: sender.imgUrl == null
-                      ? Icon(
-                          Icons.person,
-                          size: AppConstants.screenWidth(context) * 0.06,
-                        )
+                      ? Icon(Icons.person, size: width * 0.06)
                       : null,
                 ),
                 trailing: chat.lastMessage != null
                     ? Text(
                         '${recieveMessage?.timestamp.hour.toString().padLeft(2, '0')} : ${recieveMessage?.timestamp.minute.toString().padLeft(2, '0')} ${(recieveMessage?.timestamp.hour ?? 0) >= 12 ? 'PM' : 'AM'}',
                         style: TextStyle(
-                          fontSize: AppConstants.screenHeight(context) * 0.020,
+                          fontSize: (width * 0.03).clamp(11.0, 14.0),
                         ),
                       )
                     : Text(
                         'No messages',
                         style: TextStyle(
-                          fontSize: AppConstants.screenHeight(context) * 0.015,
+                          fontSize: (width * 0.03).clamp(11.0, 14.0),
                           color: Colors.grey[600],
                         ),
                       ),

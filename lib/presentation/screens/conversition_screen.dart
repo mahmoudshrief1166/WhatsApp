@@ -27,6 +27,8 @@ class _ConversitionScreenState extends State<ConversitionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = AppConstants.screenWidth(context);
+
     return BlocProvider(
       create: (context) => sl<SendMessageCubit>()..loadMessages(),
       child: Scaffold(
@@ -35,19 +37,16 @@ class _ConversitionScreenState extends State<ConversitionScreen> {
             children: [
               CircleAvatar(
                 backgroundImage: NetworkImage(widget.sender.imgUrl ?? ''),
-                radius: AppConstants.screenWidth(context) * 0.06,
+                radius: (screenWidth * 0.055).clamp(18.0, 22.0),
               ),
-              SizedBox(width: AppConstants.screenWidth(context) * 0.02),
+              SizedBox(width: screenWidth * 0.02),
               Expanded(
                 child: Text(
                   widget.sender.name,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: (AppConstants.screenWidth(context) * 0.050).clamp(
-                      12,
-                      18,
-                    ),
+                    fontSize: (screenWidth * 0.048).clamp(14.0, 17.0),
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -59,7 +58,7 @@ class _ConversitionScreenState extends State<ConversitionScreen> {
         body: SafeArea(
           child: Column(
             children: [
-              Expanded(child: ShowAllMessageConversation(widget: widget)),
+              ShowAllMessageConversation(widget: widget),
               SendMessage(messageController: messageController, widget: widget),
             ],
           ),

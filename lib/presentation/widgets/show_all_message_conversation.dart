@@ -6,10 +6,14 @@ import 'package:whats_app/presentation/screens/conversition_screen.dart';
 import 'package:whats_app/utills/app_constants/app_constants.dart';
 
 class ShowAllMessageConversation extends StatelessWidget {
-  const ShowAllMessageConversation({super.key, required this.widget}) : super();
+  const ShowAllMessageConversation({super.key, required this.widget});
   final ConversitionScreen widget;
+
   @override
   Widget build(BuildContext context) {
+    final screenWidth = AppConstants.screenWidth(context);
+    final screenHeight = AppConstants.screenHeight(context);
+
     return Expanded(
       child: BlocBuilder<SendMessageCubit, SendMessageState>(
         builder: (context, state) {
@@ -17,7 +21,6 @@ class ShowAllMessageConversation extends StatelessWidget {
             return const Center(child: CircularProgressIndicator());
           } else if (state is SendMessageSuccess) {
             final messages = state.messages;
-
             if (messages.isEmpty) {
               return const Center(child: Text("No messages yet"));
             }
@@ -35,8 +38,8 @@ class ShowAllMessageConversation extends StatelessWidget {
                     duration: const Duration(milliseconds: 400),
                     child: SlideAnimation(
                       horizontalOffset: isMe
-                          ? AppConstants.screenHeight(context) * 0.5
-                          : -(AppConstants.screenHeight(context) * 0.5),
+                          ? screenWidth * 0.5
+                          : -(screenWidth * 0.5),
                       curve: Curves.easeOutCubic,
                       child: FadeInAnimation(
                         child: Align(
@@ -45,20 +48,19 @@ class ShowAllMessageConversation extends StatelessWidget {
                               : Alignment.centerLeft,
                           child: Container(
                             constraints: BoxConstraints(
-                              maxWidth: AppConstants.screenWidth(context) * 0.8,
+                              maxWidth: screenWidth * 0.7,
                             ),
                             margin: EdgeInsets.symmetric(
-                              vertical:
-                                  AppConstants.screenHeight(context) * 0.02,
-                              horizontal:
-                                  AppConstants.screenWidth(context) * 0.02,
+                              vertical: screenHeight * 0.006,
+                              horizontal: screenWidth * 0.025,
                             ),
-                            padding: EdgeInsets.all(
-                              AppConstants.screenWidth(context) * 0.03,
+                            padding: EdgeInsets.symmetric(
+                              vertical: screenHeight * 0.008,
+                              horizontal: screenWidth * 0.03,
                             ),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(
-                                AppConstants.screenWidth(context) * 0.03,
+                                screenWidth * 0.04,
                               ),
                               color: isMe
                                   ? Theme.of(context).colorScheme.secondary
@@ -66,12 +68,12 @@ class ShowAllMessageConversation extends StatelessWidget {
                             ),
                             child: Text(
                               msg.content,
-                              style: Theme.of(context).textTheme.bodySmall
+                              style: Theme.of(context).textTheme.bodyMedium
                                   ?.copyWith(
-                                    fontSize:
-                                        (AppConstants.screenWidth(context) *
-                                                0.035)
-                                            .clamp(12, 18),
+                                    fontSize: (screenWidth * 0.038).clamp(
+                                      13.0,
+                                      16.0,
+                                    ),
                                   ),
                             ),
                           ),
@@ -85,7 +87,7 @@ class ShowAllMessageConversation extends StatelessWidget {
           } else if (state is SendMessageError) {
             return Center(child: Text('Error: ${state.error}'));
           } else {
-            return const Center(child: Text('No messages found'));
+            return const Center(child: CircularProgressIndicator());
           }
         },
       ),
