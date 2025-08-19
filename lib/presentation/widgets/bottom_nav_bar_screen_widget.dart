@@ -17,13 +17,10 @@ class BottomNavBarScreenWidget extends StatelessWidget {
             currentIndex: state.currentIndex,
             onTap: (index) => cubit.onChangeState(index),
             items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chats'),
               BottomNavigationBarItem(
-                icon: Icon(Icons.chat),
-                label: 'Chats',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.update),
-                label: 'Status',
+                icon: Icon(Icons.track_changes_sharp),
+                label: 'Updates',
               ),
             ],
           ),
